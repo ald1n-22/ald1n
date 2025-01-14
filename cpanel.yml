@@ -1,10 +1,9 @@
 deploy:
-  source: /path/to/your/project
+  source: git
+  branch: main
   target: /home/username/public_html
   include:
     - "*.html"
-    - "css/"
-    - "js/"
-  exclude:
-    - "*.yml"
-  clean: true
+    - "assets/"
+  post_deploy:
+    - echo "Deployment complete."
