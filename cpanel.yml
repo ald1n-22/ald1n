@@ -1,0 +1,10 @@
+deploy:
+  source: /path/to/your/project
+  target: /home/username/public_html
+  include:
+    - "*.html"
+    - "css/"
+    - "js/"
+  exclude:
+    - "*.yml"
+  clean: true
