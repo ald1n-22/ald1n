@@ -1,7 +1,7 @@
 deploy:
   source: git
   branch: main
-  target: /home/username/public_html
+  target: /home/kurbanb1/git.kurbanbaev.com
   include:
     - "*.html"
     - "assets/"
