@@ -1,9 +1,0 @@
-deploy:
-  source: git
-  branch: main
-  target: /home/kurbanb1/git.kurbanbaev.com
-  include:
-    - "*.html"
-    - "assets/"
-  post_deploy:
-    - echo "Deployment complete."
