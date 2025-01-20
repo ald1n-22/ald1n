@@ -1,6 +1,0 @@
-deployment:
-  tasks:
-    - export NODE_VERSION=20.11.1 # Укажите нужную версию Node.js
-    - /opt/cpanel/ea-nodejs18/bin/npm install # Установить зависимости
-    - /opt/cpanel/ea-nodejs18/bin/npm run build # Собрать проект
-    - rsync -av --delete dist/ ~/git.kurbanbaev.com/ # Копировать собранные файлы в папку, доступную для веб
