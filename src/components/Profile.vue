@@ -27,8 +27,8 @@
     }
 
     &__img {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         overflow: hidden;
 
@@ -37,5 +37,4 @@
             height: 100%;
         }
     }
-}
-</style>
+}</style>
