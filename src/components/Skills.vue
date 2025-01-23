@@ -18,7 +18,7 @@
 <script setup>
 const skills = [
     {
-        title: 'Languages',
+        title: 'Языки',
         list: [
             {
                 title: 'Русский',
@@ -35,7 +35,7 @@ const skills = [
         ]
     },
     {
-        title: 'Skills',
+        title: 'Навыки',
         list: [
             {
                 title: 'HTML',
@@ -94,6 +94,7 @@ const skills = [
     &__per {
         display: flex;
         justify-content: flex-end;
+        color: #767676;
     }
 
     &__line {

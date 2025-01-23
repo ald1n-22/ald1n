@@ -27,3 +27,7 @@ a {
     height: 1.5px;
     width: 100%;
 }
+
+::-webkit-scrollbar{
+    width: 0;
+}
