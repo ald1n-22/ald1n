@@ -1,11 +1,11 @@
 <template>
     <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__item"></li>
-        </ul>
+        <Menu />
     </nav>
 </template>
 <script setup>
+import Menu from '@/components/Menu.vue';
+
 
 </script>
 <style lang="scss">
@@ -14,15 +14,8 @@
     background: #FAFAFA;
     position: sticky;
     top: 0;
-
-    &__list {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__item {
-        width: 40px;
-        height: 40px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 </style>

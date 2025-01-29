@@ -3,9 +3,13 @@
         <div class="profile__img"><img src="../assets/img/profile.webp" alt=""></div>
         <div class="profile__name">Alladdin Kurbanbaev</div>
         <div class="profile__prof">Font-end Developer</div>
+        <Socials />
+        <span class="line"></span>
     </div>
 </template>
 <script setup>
+import Socials from './Socials.vue';
+
 </script>
 <style lang="scss">
 .profile {
@@ -14,6 +18,9 @@
     align-items: center;
     text-align: center;
     gap: 5px;
+    position: sticky;
+    top: 0;
+    background: #FAFAFA;
 
     &__name {
         font-size: 18px;
@@ -37,4 +44,5 @@
             height: 100%;
         }
     }
-}</style>
+}
+</style>

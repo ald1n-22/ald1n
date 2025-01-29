@@ -17,5 +17,9 @@ import theNav from '@/widgets/theNav.vue'
   grid-template-columns: 305px 1fr 108px;
   gap: 30px;
   height: 100%;
+
+  @media(max-width:1620px) {
+    grid-template-columns: 305px 1fr 80px;
+  }
 }
 </style>

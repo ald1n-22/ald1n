@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Arial";
+    font-family: "Inter";
+    scroll-behavior: smooth;
 }
 body {
     background: #f0f0f6;
@@ -24,10 +25,23 @@ a {
 }
 .line {
     background-color: #f0f0f6;
-    height: 1.5px;
+    min-height: 2px;
     width: 100%;
 }
-
-::-webkit-scrollbar{
+.success {
+    color: #7eb942 !important;
+}
+::-webkit-scrollbar {
     width: 0;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+.desc {
+    font-size: 16px;
+    font-weight: 300;
+    color: #767676;
 }

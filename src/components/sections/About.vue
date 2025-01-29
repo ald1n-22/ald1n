@@ -1,5 +1,5 @@
 <template>
-    <section class="about">
+    <section class="about" id="home">
         <h2 class="about__title">
             Я Курбанбаев Алладдин<br>
             <span>Front-end</span>
@@ -28,7 +28,8 @@
             color: #FFB400;
         }
     }
-    &__desc{
+
+    &__desc {
         color: #767676;
         margin-top: 15px;
     }

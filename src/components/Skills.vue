@@ -53,10 +53,6 @@ const skills = [
                 title: 'VUE',
                 per: 50
             },
-            {
-                title: 'GSAP',
-                per: 70
-            },
         ]
     },
 ]
