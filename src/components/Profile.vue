@@ -2,7 +2,7 @@
     <div class="profile">
         <div class="profile__img"><img src="../assets/img/profile.webp" alt=""></div>
         <div class="profile__name">Alladdin Kurbanbaev</div>
-        <div class="profile__prof">Font-end Developer</div>
+        <div class="profile__prof">Фронтенд разработчик</div>
         <Socials />
         <span class="line"></span>
     </div>

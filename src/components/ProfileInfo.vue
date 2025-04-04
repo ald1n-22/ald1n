@@ -2,16 +2,16 @@
     <div class="profile-info">
         <ul class="profile-info__list">
             <li class="profile-info__list-item">
-                <span>Age:</span>
+                <span>Возсраст:</span>
                 <p>25</p>
             </li>
             <li class="profile-info__list-item">
-                <span>Freelance:</span>
-                <p class="success">Available</p>
+                <span>Фриланс:</span>
+                <p class="success">Открыт</p>
             </li>
             <li class="profile-info__list-item">
-                <span>Address:</span>
-                <p>Uzbekistan, Tashkent</p>
+                <span>Адрес:</span>
+                <p>Узбекистан, Ташкент</p>
             </li>
         </ul>
     </div>

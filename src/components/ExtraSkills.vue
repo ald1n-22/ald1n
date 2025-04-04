@@ -1,7 +1,7 @@
 <template>
     <div class="extra">
         <span class="extra__title">
-            Extra Skills
+            Доп. Навыки
         </span>
         <ul class="extra__list">
             <li class="extra__list-item" v-for="(item, idx) in extra" :key="idx">
