@@ -1,0 +1,76 @@
+@use "sass:math";
+@import "/fonts/fonts.scss";
+@function rem($screen) {
+    @return math.div(100vw, $screen) * 10;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pacifico";
+}
+html,
+body {
+    font-size: 8px;
+    @media (min-width: 1200px) {
+        font-size: rem(1920);
+    }
+}
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background: $c-1;
+}
+a,
+span,
+label,
+button,
+li,
+img {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 152rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.nav {
+    display: flex;
+    gap: 2rem;
+    &__link {
+        font-size: 2rem;
+        color: rgba($color: $c-2, $alpha: 0.8);
+        position: relative;
+        font-family: "Pacifico";
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            background: $c-2;
+            width: 0%;
+            height: 2px;
+        }
+        &.router-link-exact-active {
+            color: $c-2;
+            &::before {
+                width: 100%;
+                transition: width 0.3s ease-out;
+            }
+        }
+    }
+}
+.btn {
+    padding: 1rem 2rem;
+    width: max-content;
+    font-size: 2rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
