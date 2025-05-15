@@ -10,7 +10,13 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "axios": "^1.9.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
     "nuxt": "^3.17.3",
+    "sass": "^1.88.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.1"
   }
