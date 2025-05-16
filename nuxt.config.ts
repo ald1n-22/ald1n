@@ -4,12 +4,6 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   pages: true,
   srcDir: 'src/',
-  runtimeConfig: {
-    TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN,
-    public: {
-      TELEGRAM_CHAT_ID: process.env.TELEGRAM_CHAT_ID,
-    }
-  },
   app: {
     head: {
       title: 'Ald1n',
@@ -20,6 +14,16 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon.png' }
       ]
+    }
+  },
+  css: ['@/app/styles/global.scss'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@use "@/app/styles/vars.scss" as *;`
+        }
+      }
     }
   }
 })
